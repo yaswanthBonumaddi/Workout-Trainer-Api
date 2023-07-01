@@ -67,7 +67,7 @@ app.post("/login", async (req, res) => {
     if (!isPasswordMatched) {
       return res
         .status(400)
-        .send({ status: "notok", msg: "Password Invalied" });
+        .send({ status: "notok", msg: "Password Invalid" });
     }
     let payload = {
       user: {
